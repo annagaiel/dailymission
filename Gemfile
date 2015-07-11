@@ -46,3 +46,5 @@ end
 #Twitter Bootstrap for Rails 3.x - 4 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
+#Font Awesome
+gem 'font-awesome-rails'
