@@ -51,5 +51,7 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 #Devise - Authentication Solution
 gem 'devise'
+#Gravatar
+gem 'gravtastic'
 
 

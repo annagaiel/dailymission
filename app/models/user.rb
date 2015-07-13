@@ -3,4 +3,9 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  #Set up Gravatar
+  include Gravtastic
+	gravtastic :secure => true,
+              :filetype => :gif,
+              :size => 120
 end
