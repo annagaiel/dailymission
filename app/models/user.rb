@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
 	gravtastic :secure => true,
               :filetype => :gif,
               :size => 120
+
+  has_many :task, dependent: :destroy
 end
