@@ -9,5 +9,5 @@ class User < ActiveRecord::Base
               :filetype => :gif,
               :size => 120
 
-  has_many :task, dependent: :destroy
+  has_many :tasks, dependent: :destroy
 end
