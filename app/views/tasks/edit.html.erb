@@ -2,5 +2,9 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @task %> |
-<%= link_to 'Back', tasks_path %>
+<nav>
+  <ul class="pager">
+    <li><%= link_to 'Show', @task %></li>
+    <li><%= link_to 'Back', tasks_path %></li>
+  </ul>
+</nav>

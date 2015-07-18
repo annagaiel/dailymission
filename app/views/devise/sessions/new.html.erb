@@ -1,11 +1,17 @@
-<h2 class="text-center">Log in</h2>
+<div class="border-div">
+
+<h1 class="text-center">Log in</h1>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f| %>
 
     <%= f.input :email, label_html: { class: 'screenreader' }, required: false, autofocus: true, placeholder: "Email", input_html: {class: "form-control"} %>
     <%= f.input :password, label_html: { class: 'screenreader' }, required: false, placeholder: "Password", input_html: {class: "form-control"} %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    <%= f.input :remember_me, input_html: {class: "form-control checkbox"}, as: :boolean if devise_mapping.rememberable? %>
     <%= f.button :submit, "Log in", class: "btn btn-primary btn-block" %>
-<% end %>
 
 <%= render "devise/shared/links" %>
+
+<% end %>
+
+</div>
+

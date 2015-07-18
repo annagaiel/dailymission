@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @task.content %>
-</p>
+<div class="text-center show-info">
+	<h1>
+		Task Content:
+	</h1>
+	<p>
+		<%= @task.content %>
+	</p>
+</div>
 
-<p>
-  <strong>State:</strong>
-  <%= @task.state %>
-</p>
+<br />
 
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
+<nav>
+  <ul class="pager">
+    <li><%= link_to 'Edit', edit_task_path(@task) %></li>
+    <li><%= link_to 'Back', tasks_path %></li>
+  </ul>
+</nav>
