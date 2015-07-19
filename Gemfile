@@ -53,5 +53,8 @@ gem 'simple_form'
 gem 'devise'
 #Gravatar
 gem 'gravtastic'
+#Auto HTML
+gem 'auto_html'
+
 
 
